@@ -9,4 +9,4 @@ I am adding some text here
 
 ### This is an even smaller headline
 
-![](sentosa.jpg)
+![](Candlestick-Patterns.jpg)
