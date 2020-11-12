@@ -1,4 +1,4 @@
-# This is a test repository for our DevOps course
+# Candlestick Chart Mastery for Trading
 
 I am adding some text here
 
