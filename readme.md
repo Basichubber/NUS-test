@@ -9,4 +9,5 @@ I am adding some text here
 
 ### This is an even smaller headline
 
+If i master this, i will get rich
 ![](Candlestick-Patterns.jpg)
