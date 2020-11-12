@@ -1,6 +1,6 @@
 # Candlestick Chart Mastery for Trading
 
-I am adding some text here
+Do you wish to retire early? 
 
 ## This is a smaller headline
 
