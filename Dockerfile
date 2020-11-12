@@ -10,6 +10,7 @@ COPY package.json /usr/src/app
 RUN npm install
 
 ADD src /usr/src/app/src
+ADD public /usr/src/app/src/public
 
 RUN npm build
 # start app
