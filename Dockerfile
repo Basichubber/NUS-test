@@ -1,21 +1,20 @@
 $ docker --version
 Docker version 19.03.8, build afacb8b   
 # pull official base image
-FROM node:13.12.0-alpine
+FROM node:latest
 
+RUN mkdir -p /usr/src/app
 # set working directory
-WORKDIR /app
-
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+WORKDIR /usr/src/app
 
 # install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
+COPY package.json /usr/src/app
+COPY package-lock.json /usr/src/app
 RUN npm install
 
-# add app
-COPY . ./
+ADD src /usr/src/app/src
+ADD public /usr/src/app/public
 
+RUN npm build
 # start app
-CMD ["npm", "start"]    
+CMD ["npm", "start"]   
