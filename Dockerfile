@@ -5,11 +5,11 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # install app dependencies
-COPY package.json /usr/src/app
+COPY package.json /usr
 
 RUN npm install
 
-ADD src /usr/src/app/src
+COPY src /usr/src
 ADD public /usr/src/app/src/public
 
 RUN npm build
